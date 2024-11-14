@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.biz.mapper.BudgetCostMapper">
+
+    <resultMap type="com.biz.entity.BudgetCost" id="BudgetCostMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="code" column="code" jdbcType="VARCHAR"/>
+        <result property="type" column="type" jdbcType="INTEGER"/>
+        <result property="source" column="source" jdbcType="INTEGER"/>
+        <result property="year" column="year" jdbcType="INTEGER"/>
+        <result property="quarter" column="quarter" jdbcType="INTEGER"/>
+        <result property="month" column="month" jdbcType="INTEGER"/>
+        <result property="subjectCode" column="subject_code" jdbcType="VARCHAR"/>
+        <result property="subjectName" column="subject_name" jdbcType="VARCHAR"/>
+        <result property="organization" column="organization" jdbcType="VARCHAR"/>
+        <result property="channel" column="channel" jdbcType="VARCHAR"/>
+        <result property="client" column="client" jdbcType="VARCHAR"/>
+        <result property="shop" column="shop" jdbcType="VARCHAR"/>
+        <result property="productLevel" column="product_level" jdbcType="INTEGER"/>
+        <result property="product" column="product" jdbcType="VARCHAR"/>
+        <result property="openingAmountCash" column="opening_amount_cash" jdbcType="VARCHAR"/>
+        <result property="availableBalanceCash" column="available_balance_cash" jdbcType="VARCHAR"/>
+        <result property="openingAmountStores" column="opening_amount_stores" jdbcType="VARCHAR"/>
+        <result property="availableBalanceStores" column="available_balance_stores" jdbcType="VARCHAR"/>
+        <result property="status" column="status" jdbcType="INTEGER"/>
+        <result property="comment" column="comment" jdbcType="VARCHAR"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+
+</mapper>
+

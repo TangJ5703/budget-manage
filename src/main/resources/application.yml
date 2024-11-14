@@ -1,0 +1,19 @@
+server:
+  servlet:
+    context-path: /budget
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.101.128:3306/bozhi_test?serverTimezone=GMT%2B8&userUnicode=true&useSSL=false
+    username: root
+    password: 123456
+
+  jackson:
+    default-property-inclusion: NON_NULL
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

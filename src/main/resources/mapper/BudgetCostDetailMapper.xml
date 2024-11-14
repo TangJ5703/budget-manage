@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.biz.mapper.BudgetCostDetailMapper">
+
+    <resultMap id="BaseResultMap" type="com.biz.entity.BudgetCostDetail">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="operateType" column="operate_type" jdbcType="TINYINT"/>
+            <result property="serviceCode" column="service_code" jdbcType="VARCHAR"/>
+            <result property="budgetSubject" column="budget_subject" jdbcType="VARCHAR"/>
+            <result property="detailType" column="detail_type" jdbcType="TINYINT"/>
+            <result property="channel" column="channel" jdbcType="VARCHAR"/>
+            <result property="client" column="client" jdbcType="VARCHAR"/>
+            <result property="shop" column="shop" jdbcType="VARCHAR"/>
+            <result property="openingAmount" column="opening_amount" jdbcType="DECIMAL"/>
+            <result property="beforeOperate" column="before_operate" jdbcType="DECIMAL"/>
+            <result property="operateAmount" column="operate_amount" jdbcType="DECIMAL"/>
+            <result property="afterOperate" column="after_operate" jdbcType="DECIMAL"/>
+            <result property="comment" column="comment" jdbcType="VARCHAR"/>
+            <result property="operator" column="operator" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,operate_type,service_code,
+        budget_subject,detail_type,channel,
+        client,shop,opening_amount,
+        before_operate,operate_amount,after_operate,
+        comment,operator
+    </sql>
+</mapper>

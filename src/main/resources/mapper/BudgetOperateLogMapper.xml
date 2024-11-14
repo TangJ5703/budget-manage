@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.biz.mapper.BudgetOperateLogMapper">
+
+    <resultMap id="BaseResultMap" type="com.biz.entity.BudgetOperateLog">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="operatorId" column="operator_id" jdbcType="BIGINT"/>
+            <result property="operatorName" column="operator_name" jdbcType="VARCHAR"/>
+            <result property="operateTime" column="operate_time" jdbcType="TIMESTAMP"/>
+            <result property="operateType" column="operate_type" jdbcType="VARCHAR"/>
+            <result property="comment" column="comment" jdbcType="VARCHAR"/>
+    </resultMap>
+
+</mapper>
