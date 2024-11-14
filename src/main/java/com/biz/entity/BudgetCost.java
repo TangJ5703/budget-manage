@@ -2,6 +2,7 @@ package com.biz.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.Version;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -89,5 +90,7 @@ public class BudgetCost {
     //删除标志
     private Integer deleteFlag;
 
+    @Version
+    private Integer version;
 }
 
